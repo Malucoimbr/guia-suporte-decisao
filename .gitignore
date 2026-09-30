@@ -1,0 +1,35 @@
+node_modules
+dist
+dist-ssr
+coverage
+*.local
+.DS_Store
+.vite
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editores
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Acervo de artigos da Rapid Review
+# Nao versionado: sao PDFs licenciados pelos publishers (ACM, IEEE, Springer),
+# cuja redistribuicao nao e permitida. Os caminhos de cada artigo ficam
+# registrados em src/conteudo/estudos.json, no campo arquivoNoAcervo.
+acm/
+iee/
+springer/
+others/
+
+# Documento pessoal da autora (projeto de pesquisa), fora do escopo do repositorio
+v2 Projeto de Pesquisa*.pdf

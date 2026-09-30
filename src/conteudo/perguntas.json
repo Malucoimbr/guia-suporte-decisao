@@ -1,0 +1,176 @@
+[
+  {
+    "id": "P1",
+    "texto": "A aplicação continuará em uso ou já está prevista para desativação ou substituição?",
+    "criterio": "usoDaAplicacao",
+    "bloco": "A",
+    "ordem": 1,
+    "estrategiasAfetadas": ["retire"],
+    "fontes": ["[Ramchand2021]"]
+  },
+  {
+    "id": "P4",
+    "texto": "Existe dado ou componente sob exigência regulatória que impeça sua execução fora do ambiente atual?",
+    "criterio": "restricaoRegulatoria",
+    "bloco": "B",
+    "ordem": 1,
+    "estrategiasAfetadas": ["retain", "rehost", "replatform", "refactor", "repurchase"],
+    "fontes": ["[Ramchand2021]"]
+  },
+  {
+    "id": "P5",
+    "texto": "A plataforma, a linguagem ou a versão em uso tem fim de suporte anunciado?",
+    "criterio": "fimDeSuporte",
+    "bloco": "B",
+    "ordem": 2,
+    "estrategiasAfetadas": ["retain"],
+    "fontes": ["[Fonseca2024]"]
+  },
+  {
+    "id": "P6",
+    "texto": "Como se comporta a carga da aplicação ao longo do ano?",
+    "criterio": "previsibilidadeDaCarga",
+    "bloco": "B",
+    "ordem": 3,
+    "estrategiasAfetadas": ["retain", "rehost", "replatform"],
+    "fontes": ["[Dalakas2025]", "[Hansen2023]"]
+  },
+  {
+    "id": "P2",
+    "texto": "Qual o valor da aplicação para o negócio hoje?",
+    "criterio": "valorDeNegocio",
+    "bloco": "C",
+    "ordem": 1,
+    "estrategiasAfetadas": ["retain", "refactor", "retire", "repurchase", "replatform"],
+    "fontes": ["[Kirkila2025]"]
+  },
+  {
+    "id": "P3",
+    "texto": "Manter e evoluir a aplicação é simples, ou custa caro por deficiências internas acumuladas?",
+    "criterio": "qualidadeTecnica",
+    "bloco": "C",
+    "ordem": 2,
+    "estrategiasAfetadas": ["retain", "refactor", "replatform"],
+    "fontes": ["[Kirkila2025]", "[Fonseca2024]"]
+  },
+  {
+    "id": "P7",
+    "texto": "Há prazo e disponibilidade de equipe para uma reescrita ou reestruturação da aplicação?",
+    "criterio": "tempoParaReengenharia",
+    "bloco": "D",
+    "ordem": 1,
+    "estrategiasAfetadas": ["rehost", "refactor"],
+    "fontes": ["[Khouibiri2024]", "[Bremer2021]"]
+  },
+  {
+    "id": "P8",
+    "texto": "Qual o tamanho da base de código a migrar?",
+    "criterio": "volumeDeCodigo",
+    "bloco": "D",
+    "ordem": 2,
+    "estrategiasAfetadas": ["refactor"],
+    "fontes": ["[Fonseca2024]"]
+  },
+  {
+    "id": "P9",
+    "texto": "Há dependência forte de bibliotecas de terceiros ou de versões já descontinuadas?",
+    "criterio": "acoplamentoDeDependencias",
+    "bloco": "D",
+    "ordem": 3,
+    "estrategiasAfetadas": ["refactor", "replatform"],
+    "fontes": ["[Fonseca2024]"]
+  },
+  {
+    "id": "P10",
+    "texto": "A empresa tem competência interna em nuvem, ou depende de terceiros para isso?",
+    "criterio": "competenciaInternaEmNuvem",
+    "bloco": "D",
+    "ordem": 4,
+    "estrategiasAfetadas": ["refactor", "replatform"],
+    "fontes": ["[RoyPatil2023]", "[Khouibiri2024]", "[Kirkila2025]"]
+  },
+  {
+    "id": "P11",
+    "texto": "Depender de tecnologias exclusivas de um provedor é preocupação relevante para a empresa?",
+    "criterio": "aversaoAAprisionamento",
+    "bloco": "E",
+    "ordem": 1,
+    "estrategiasAfetadas": ["replatform", "repurchase"],
+    "fontes": ["[Bremer2021]", "[Khouibiri2024]"]
+  },
+  {
+    "id": "P12",
+    "texto": "Existe no mercado solução comercial pronta que faça o que essa aplicação faz?",
+    "criterio": "equivalenteEmSaaS",
+    "bloco": "E",
+    "ordem": 2,
+    "estrategiasAfetadas": ["repurchase"],
+    "fontes": ["[Khouibiri2024]"]
+  },
+  {
+    "id": "P13",
+    "texto": "Risco financeiro é prioridade alta na decisão?",
+    "criterio": "prioridadeDeRiscoFinanceiro",
+    "bloco": "E",
+    "ordem": 3,
+    "estrategiasAfetadas": ["retain"],
+    "fontes": ["[Jose2021]"]
+  },
+  {
+    "id": "P14",
+    "texto": "Habilitar recursos novos que a aplicação atual não permite é objetivo desta migração?",
+    "criterio": "inovacaoComoPrioridade",
+    "bloco": "E",
+    "ordem": 4,
+    "estrategiasAfetadas": ["refactor"],
+    "fontes": ["[Kirkila2025]"]
+  },
+  {
+    "id": "P15",
+    "texto": "A linguagem e o runtime são suportados pela plataforma gerenciada pretendida?",
+    "criterio": "compatibilidadeDeLinguagem",
+    "bloco": "F",
+    "ordem": 1,
+    "condicaoDeExibicao": {
+      "estrategiasEmJogo": ["replatform"]
+    },
+    "estrategiasAfetadas": ["replatform"],
+    "fontes": ["[Khouibiri2024]"]
+  },
+  {
+    "id": "P16",
+    "texto": "O banco de dados tem equivalente compatível nessa plataforma?",
+    "criterio": "compatibilidadeDeBanco",
+    "bloco": "F",
+    "ordem": 2,
+    "condicaoDeExibicao": {
+      "estrategiasEmJogo": ["replatform"]
+    },
+    "estrategiasAfetadas": ["replatform"],
+    "fontes": ["[Khouibiri2024]"]
+  },
+  {
+    "id": "P17",
+    "texto": "O middleware pode ser adaptado ou substituído pelos serviços da plataforma?",
+    "criterio": "adaptacaoDeMiddleware",
+    "bloco": "F",
+    "ordem": 3,
+    "condicaoDeExibicao": {
+      "estrategiasEmJogo": ["replatform"]
+    },
+    "estrategiasAfetadas": ["replatform"],
+    "fontes": ["[Khouibiri2024]"]
+  },
+  {
+    "id": "P18",
+    "texto": "As bibliotecas de terceiros funcionam sob as restrições de execução da plataforma?",
+    "criterio": "bibliotecasSobRestricoesDaPlataforma",
+    "bloco": "F",
+    "ordem": 4,
+    "condicaoDeExibicao": {
+      "estrategiasEmJogo": ["replatform"]
+    },
+    "estrategiasAfetadas": ["replatform"],
+    "fontes": ["[Khouibiri2024]"]
+  }
+]

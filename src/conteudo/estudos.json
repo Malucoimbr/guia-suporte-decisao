@@ -1,0 +1,128 @@
+[
+  {
+    "id": "[HollerWestner2025]",
+    "referencia": "Holler; Westner (2025). Factors Influencing Cloud Computing Adoption in Small and Medium-Sized Enterprises: A Systematic Review.",
+    "arquivoNoAcervo": null,
+    "contextoEmpirico": "Não verificado: o estudo é listado como A1 na Tabela 3 do projeto, mas não está no acervo e não foi lido (Seção 6.2 dos requisitos).",
+    "porteAnalisado": "Não verificado, pelo mesmo motivo: sem o texto, o porte analisado não pode ser afirmado."
+  },
+  {
+    "id": "[RoyPatil2023]",
+    "referencia": "Roy; Patil (2023). Framework for Cloud Security Initiatives in Small and Medium-Sized Enterprises.",
+    "arquivoNoAcervo": "iee/Framework_for_Cloud_Security_Initiatives_in_Small_and_Medium-Sized_Enterprises.pdf",
+    "contextoEmpirico": "Survey com 125 respondentes na Índia, testando dez fatores de adoção de segurança em nuvem sob o arcabouço Tecnologia-Organização-Ambiente.",
+    "porteAnalisado": "27 empresas pequenas, 25 médias e 73 grandes. É a única fonte do corpus a definir PME: empresa independente de outras com menos de 250 funcionários."
+  },
+  {
+    "id": "[Bremer2021]",
+    "referencia": "Bremer et al. (2021). A Systematic Literature Review on the Suitability of Cloud Migration Methods for SMEs. CPSL 2021.",
+    "arquivoNoAcervo": "iee/Bremer 2021 - A Systematic Literature Review On The Suitability Of Cloud Migration Methods For SMEs - CPSL2021.pdf",
+    "contextoEmpirico": "Revisão sistemática de 25 estudos sobre a adequação de métodos de migração a PMEs, com 15 fatores determinantes da decisão e pontuação de importância somada sobre 12 estudos primários.",
+    "porteAnalisado": "PMEs, no contexto alemão."
+  },
+  {
+    "id": "[Ramchand2021]",
+    "referencia": "Ramchand; Chhetri; Kowalczyk (2021). Enterprise adoption of cloud computing with application portfolio profiling and application portfolio assessment.",
+    "arquivoNoAcervo": "springer/Enterprise adoption of cloud computing with application portfolio profiling and application portfolio assessment.pdf",
+    "contextoEmpirico": "Caso real de perfilamento e avaliação de portfólio, com 17 critérios aplicados a 350 aplicações; 53 delas avaliadas como inadequadas à nuvem.",
+    "porteAnalisado": "Banco de porte médio."
+  },
+  {
+    "id": "[Mwilu2024]",
+    "referencia": "Sangupamba Mwilu; Prat; Comyn-Wattiau (2024). A Taxonomy Development Method to Define the Vocabulary for Rule-Based Guidance in Complex Emerging Technologies.",
+    "arquivoNoAcervo": "springer/A Taxonomy Development Method to Define the Vocabulary for Rule-Based Guidance in Complex Emerging Technologies.pdf",
+    "contextoEmpirico": "Revisão de literatura e método de desenvolvimento de taxonomia para orientação baseada em regras, com aplicação e entrevista com um gestor em agência governamental da República Democrática do Congo.",
+    "porteAnalisado": "Agência governamental; porte não especificado."
+  },
+  {
+    "id": "[Khouibiri2024]",
+    "referencia": "Khouibiri; Farhaoui; Taherdoost (2024). Exploring BI Data Transition to the Cloud.",
+    "arquivoNoAcervo": "acm/Exploring BI Data Transition to the Cloud.pdf",
+    "contextoEmpirico": "Análise técnica de literatura sobre a transição de dados de business intelligence para a nuvem, organizada por modelo de serviço alvo — IaaS, PaaS e SaaS — com as verificações obrigatórias de cada um.",
+    "porteAnalisado": "Não especificado."
+  },
+  {
+    "id": "[Dalakas2025]",
+    "referencia": "Dalakas et al. (2025). Are Public Cloud Solutions Really Cheaper? Cost Analysis Findings from the Migration Project of a Large-Scale Governmental Organization.",
+    "arquivoNoAcervo": "iee/Are_Public_Cloud_Solutions_Really_Cheaper_Cost_Analysis_Findings_from_the_Migration_Project_of_a_Large-Scale_Governmental_Organization.pdf",
+    "contextoEmpirico": "Análise de custo em cinco anos comparando três modelos — local, nuvem privada gerenciada e nuvem pública — em projeto real de migração, com quatro condutores de custo identificados.",
+    "porteAnalisado": "Organização governamental de larga escala, na Grécia."
+  },
+  {
+    "id": "[Zibitsker2025]",
+    "referencia": "Zibitsker; Lupersolsky (2025). Cost Optimization and Performance Control in the Hybrid Multi-cloud Environment.",
+    "arquivoNoAcervo": "acm/Cost Optimization and Performance Control in TheHybrid Multi-cloud Environment.pdf",
+    "contextoEmpirico": "Estudos de caso em plataformas de dados híbridas e multinuvem, com modelagem a partir de dados de medição para determinar configuração mínima e orçamento antes da implantação; exige coleta automatizada e contínua de métricas horárias.",
+    "porteAnalisado": "Corporações."
+  },
+  {
+    "id": "[Hansen2023]",
+    "referencia": "Hansen; Moghaddam (2023). Architecting Cloud Solutions for Improved Consulting Practice.",
+    "arquivoNoAcervo": "acm/Architecting Cloud Solutions for Improved ConsultingPractice.pdf",
+    "contextoEmpirico": "Revisão de literatura, survey e caso simulado de dimensionamento, com o ponto de equilíbrio entre pagamento por uso e assinatura em função do volume de carga.",
+    "porteAnalisado": "Consultoria internacional; porte dos clientes não especificado."
+  },
+  {
+    "id": "[Patel2024]",
+    "referencia": "Patel et al. (2024). Navigating the Cloudscape: Framework and Strategies for Seamless Migration to the Cloud.",
+    "arquivoNoAcervo": "iee/Navigating_the_Cloudscape_Framework_and_Strategies_for_Seamless_Migration_to_the_Cloud.pdf",
+    "contextoEmpirico": "Artigo de revisão sobre arcabouços e estratégias de migração. Citado no projeto como fonte dos 7Rs, mas enumera cinco estratégias com outros nomes — Rehosting, Refactoring, Redesigning, Rebuilding e Replacing (divergência D6 dos requisitos).",
+    "porteAnalisado": "Não especificado."
+  },
+  {
+    "id": "[Ayas2023]",
+    "referencia": "Ayas; Leitner; Hebig (2023). An empirical study of the systemic and technical migration towards microservices.",
+    "arquivoNoAcervo": "springer/An empirical study of the systemic and technical migration towards microservices.pdf",
+    "contextoEmpirico": "Estudo empírico com 19 entrevistas em 16 organizações e 76 discussões técnicas sobre migração para microsserviços, com três critérios alternativos de decomposição de monolito.",
+    "porteAnalisado": "Cinco organizações de 25 a 150 funcionários; as demais de 3.000 a 1.000.000."
+  },
+  {
+    "id": "[Fonseca2024]",
+    "referencia": "Fonseca et al. (2024). Migrating legacy systems: an experience report on the industrial environment.",
+    "arquivoNoAcervo": "acm/migratinglegacysystemsanexperiencereportontheindustrialenvironment.pdf",
+    "contextoEmpirico": "Relato de experiência industrial no Brasil, de janeiro de 2023 a maio de 2024, sob prazo imposto por fim de suporte da linguagem e da plataforma; efeito da refatoração medido por SonarQube.",
+    "porteAnalisado": "Não especificado."
+  },
+  {
+    "id": "[Ismael2025]",
+    "referencia": "Ismael et al. (2025). Goal Catalogue for Migrating Web Applications to the Cloud in Smart Cities: A KAOS-Based Approach.",
+    "arquivoNoAcervo": "iee/Goal_Catalogue_for_Migrating_Web_Applications_to_the_Cloud_in_Smart_Cities_A_KAOS-Based_Approach.pdf",
+    "contextoEmpirico": "Catálogo de 117 metas construído de forma iterativa e avaliado por 28 profissionais. O texto foi obtido por reconhecimento óptico de caracteres, e toda afirmação atribuída ao estudo precisa de reconferência contra o original (Seção 6.4 dos requisitos).",
+    "porteAnalisado": "7,1% dos respondentes até 19 funcionários, 28,6% de 20 a 99, 14,3% de 100 a 499 e 50% acima de 500."
+  },
+  {
+    "id": "[Jose2021]",
+    "referencia": "Jose; Ramanan; Kumar (2021). A risk comparison framework for evaluating the impact of telecom cloudification in organizational risk profile.",
+    "arquivoNoAcervo": "springer/A risk comparison framework for evaluating the impact of telecom cloudification in organizational risk profile.pdf",
+    "contextoEmpirico": "Comparação de 33 variáveis de risco em seis grupos entre nuvem, local e híbrido, com 51 operadoras de 11 mercados, por Delphi e Processo de Rede Analítica. O uso de modelo matemático multicritério conflita com o critério de exclusão CE2 da Rapid Review (Seção 6.3 dos requisitos).",
+    "porteAnalisado": "Operadoras de telecomunicações; tratadas na Seção 8.4 dos requisitos como organizações grandes."
+  },
+  {
+    "id": "[Seifert2024]",
+    "referencia": "Seifert; Kuehnel (2024/2025). HySOR: A Simulation Model for the Sharing of Risk in a Service Level Agreement-Aware Hybrid Cloud. Business & Information Systems Engineering, 67(4), 495–510.",
+    "arquivoNoAcervo": "springer/HySOR.pdf",
+    "contextoEmpirico": "Modelo de simulação e entrevistas com especialistas sobre partilha de risco em nuvem híbrida sensível a acordo de nível de serviço; admite a conclusão de inaceitabilidade, descrita como decisão de não fazer.",
+    "porteAnalisado": "Grandes empresas, em países germanófonos."
+  },
+  {
+    "id": "[Kirkila2025]",
+    "referencia": "Kirkila et al. (2025). Case Study Review: IT Legacy System Migration Success Factors.",
+    "arquivoNoAcervo": "iee/Case_Study_Review_IT_Legacy_System_Migration_Success_Factors.pdf",
+    "contextoEmpirico": "Revisão narrativa e estudos de caso multissetoriais. Única fonte do corpus com quadrante de portfólio que liga qualidade técnica, valor de negócio e inovação a um tratamento indicado, e fonte dos fatores de sucesso e de fracasso do processo.",
+    "porteAnalisado": "Não especificado; o estudo remete a adaptação a contextos menores a trabalho futuro."
+  },
+  {
+    "id": "[Bower2022]",
+    "referencia": "Bower (2022). Impact of the Philippine Government's Migration to the Cloud.",
+    "arquivoNoAcervo": "acm/Impact of the Philippine Government’s Migration to the Cloud.pdf",
+    "contextoEmpirico": "Estudo prospectivo de política pública sobre migração para a nuvem; descreve o Centro de Excelência em Nuvem e as suas sete atribuições.",
+    "porteAnalisado": "Governo nacional das Filipinas."
+  },
+  {
+    "id": "[Sagala2024]",
+    "referencia": "Sagala; Őri (2024). Toward SMEs digital transformation success: a systematic literature review.",
+    "arquivoNoAcervo": "iee/s10257-024-00682-2.pdf",
+    "contextoEmpirico": "Revisão sistemática de 106 artigos sobre limitações e sucesso da transformação digital em PMEs; recomenda inovação incremental em lugar de radical. Está no acervo mas não consta da Tabela 3 do projeto (Seção 6.2 dos requisitos).",
+    "porteAnalisado": "PMEs."
+  }
+]

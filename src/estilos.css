@@ -1,0 +1,288 @@
+:root {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: #1c1c1c;
+  background-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1.5rem;
+}
+
+main {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+/* Foco sempre visível, inclusive nos títulos que recebem foco programático na
+   troca de tela. */
+:focus-visible {
+  outline: 3px solid #0b5cab;
+  outline-offset: 2px;
+}
+
+.abertura section {
+  margin-block: 1.25rem;
+}
+
+.abertura h3 {
+  margin-block-end: 0.25rem;
+  font-size: 1rem;
+}
+
+.acao-principal {
+  font: inherit;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid #0b5cab;
+  border-radius: 0.25rem;
+  background-color: #0b5cab;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.acao-principal:hover {
+  background-color: #09497f;
+}
+
+/* Tela de pergunta: o grupo de opções é o que estrutura a tela, e o rótulo do
+   grupo é o próprio texto da pergunta. */
+.pergunta fieldset {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.25rem;
+}
+
+.pergunta legend {
+  padding-inline: 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.pergunta-instrucao {
+  margin-block: 0 0.75rem;
+  color: #4a4a4a;
+}
+
+.pergunta-opcoes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pergunta-opcoes li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  padding-block: 0.3rem;
+}
+
+.pergunta-opcoes label {
+  cursor: pointer;
+}
+
+/* "Não sei" fecha a lista e é separado dos valores cadastrados: não vem do
+   conteúdo, é opção implícita de toda pergunta. */
+.pergunta-nao-sei {
+  margin-block-start: 0.5rem;
+  padding-block-start: 0.6rem;
+  border-block-start: 1px solid #e4e4e4;
+}
+
+.pergunta-dica {
+  margin-block-end: 0;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+
+/* Aviso do que uma revisão de resposta descartou. Não depende de cor: o texto
+   diz o que aconteceu. */
+.aviso-revisao {
+  padding: 0.6rem 0.8rem;
+  border-inline-start: 4px solid #8a6d00;
+  background-color: #fdf7e3;
+}
+
+/* Tela de resultado: as três faixas, o grupo não avaliado e o que ficou sem
+   resposta. A faixa de cada estratégia está escrita no seu próprio título, de
+   modo que a distinção entre as faixas não depende de cor nem de posição. */
+.resultado section {
+  margin-block: 1.5rem;
+}
+
+.resultado h3 {
+  margin-block-end: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.resultado h4 {
+  margin-block: 0 0.35rem;
+  font-size: 1rem;
+}
+
+.resultado h5 {
+  margin-block: 0.75rem 0.25rem;
+  font-size: 0.95rem;
+}
+
+.resultado-declaracao {
+  padding: 0.6rem 0.8rem;
+  border-inline-start: 4px solid #0b5cab;
+  background-color: #eef4fb;
+}
+
+.resultado-parcial {
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.25rem;
+}
+
+.resultado-faixa-vazia {
+  color: #4a4a4a;
+}
+
+.resultado-estrategias,
+.resultado-nao-avaliadas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resultado-estrategias > li,
+.resultado-nao-avaliadas > li {
+  margin-block: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.25rem;
+}
+
+.resultado-observacao,
+.resultado-marcacao {
+  margin-block: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+
+.resultado-regras {
+  margin: 0;
+  padding-inline-start: 1.2rem;
+}
+
+.resultado-regras > li {
+  margin-block: 0.5rem;
+}
+
+.resultado-regras p {
+  margin-block: 0.15rem;
+}
+
+.regra-condicao,
+.regra-respostas,
+.regra-fonte {
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+
+.resultado-respostas {
+  padding-inline-start: 1.2rem;
+}
+
+.resultado-respostas > li {
+  margin-block: 0.35rem;
+}
+
+/* Visão «e se»: abre dentro do item do critério sem resposta, e por isso é
+   recuada e delimitada — o leitor precisa ver onde o cenário hipotético começa e
+   termina. O efeito de cada cenário está escrito no seu título, de modo que a
+   distinção entre "muda" e "não muda" não depende de cor. */
+.resultado-e-se {
+  margin-block: 0.6rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px dashed #6b6b6b;
+  border-radius: 0.25rem;
+  background-color: #fafafa;
+}
+
+.resultado-e-se h4 {
+  margin-block: 0 0.35rem;
+  font-size: 1rem;
+}
+
+.resultado-e-se h5 {
+  margin-block: 0 0.25rem;
+  font-size: 0.95rem;
+}
+
+.resultado-e-se-declaracao {
+  padding: 0.5rem 0.7rem;
+  border-inline-start: 4px solid #0b5cab;
+  background-color: #eef4fb;
+}
+
+.resultado-e-se-cenarios {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resultado-e-se-cenarios > li {
+  margin-block: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+
+.resultado-e-se-mudancas {
+  margin-block: 0.25rem;
+  padding-inline-start: 1.2rem;
+}
+
+.resultado-e-se-base,
+.resultado-e-se-recomendadas,
+.resultado-e-se-invalidadas {
+  margin-block: 0.35rem 0;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+
+/* Avisos de encerramento: os três limites do resultado. Ficam recuados por uma
+   borda lateral para se distinguirem das faixas de estratégia sem depender de
+   cor — o título de cada aviso já diz o que o resultado não é. */
+.resultado-avisos > article {
+  margin-block: 1rem;
+  padding: 0.75rem 1rem;
+  border-inline-start: 4px solid #6b6b6b;
+  background-color: #f6f6f6;
+}
+
+.resultado-avisos h4 {
+  margin-block: 0 0.35rem;
+}
+
+.resultado-aviso-recorte,
+.resultado-aviso-descricao,
+.resultado-aviso-vazio {
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+
+.resultado-aviso-itens {
+  margin: 0;
+  padding-inline-start: 1.2rem;
+}
+
+.resultado-aviso-itens > li {
+  margin-block: 0.4rem;
+}
+
+.item-fonte,
+.item-estrategias {
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}

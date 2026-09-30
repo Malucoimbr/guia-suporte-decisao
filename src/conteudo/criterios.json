@@ -1,0 +1,336 @@
+[
+  {
+    "id": "usoDaAplicacao",
+    "nome": "Uso e destino da aplicação",
+    "descricao": "Se a aplicação continuará em operação ou já está prevista para desativação ou substituição. [Ramchand2021] exclui da avaliação as aplicações não estratégicas ou destinadas a desativação, o que faz deste o primeiro critério do questionário (Bloco A do design).",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "continuaEmUso",
+        "criterio": "usoDaAplicacao",
+        "rotulo": "Continua em uso"
+      },
+      {
+        "id": "previstaParaDesativacao",
+        "criterio": "usoDaAplicacao",
+        "rotulo": "Prevista para desativação ou substituição"
+      }
+    ]
+  },
+  {
+    "id": "restricaoRegulatoria",
+    "nome": "Requisitos regulatórios e classificação de dados",
+    "descricao": "Se há dado ou componente sob exigência regulatória que impeça a execução fora do ambiente atual. [Ramchand2021] trata requisitos regulatórios e classificação de dados como critérios obrigatórios por aplicação e conclui que componentes regulados podem ser inadequados à nuvem — 53 de 350 aplicações no caso validado. A divergência D2 dos requisitos permanece aberta: [RoyPatil2023] não encontrou significância para conformidade na adoção por PMEs e [Patel2024] a trata como critério de seleção de provedor.",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "haRestricaoRegulatoria",
+        "criterio": "restricaoRegulatoria",
+        "rotulo": "Sim, há dado ou componente com essa exigência"
+      },
+      {
+        "id": "semRestricaoRegulatoria",
+        "criterio": "restricaoRegulatoria",
+        "rotulo": "Não há exigência desse tipo"
+      }
+    ]
+  },
+  {
+    "id": "fimDeSuporte",
+    "nome": "Restrição temporal externa",
+    "descricao": "Se a plataforma, a linguagem ou a versão em uso tem fim de suporte anunciado, e se esse anúncio tem data definida. Em [Fonseca2024] o fim de suporte do Java 8 e a descontinuação da primeira geração da plataforma de hospedagem, com data marcada em 31 de janeiro de 2024, foram o condutor decisivo da decisão.",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "fimDeSuporteComPrazo",
+        "criterio": "fimDeSuporte",
+        "rotulo": "Sim, com prazo definido"
+      },
+      {
+        "id": "fimDeSuporteSemPrazo",
+        "criterio": "fimDeSuporte",
+        "rotulo": "Sim, sem prazo definido"
+      },
+      {
+        "id": "semFimDeSuporte",
+        "criterio": "fimDeSuporte",
+        "rotulo": "Não há fim de suporte anunciado"
+      }
+    ]
+  },
+  {
+    "id": "previsibilidadeDaCarga",
+    "nome": "Previsibilidade da carga",
+    "descricao": "Como se comporta a carga da aplicação ao longo do ano. [Dalakas2025] mostra que sob carga estável e previsível a nuvem pública não traduz escalabilidade em economia, e que o desalinhamento entre duração máxima de contrato e período de depreciação favorece a permanência local; [Hansen2023] situa o ponto de equilíbrio entre pagamento por uso e assinatura em função do volume de carga. Sem limiar operacional na literatura, a resposta depende do julgamento do respondente (limitação 2 dos requisitos).",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "cargaEstavelEPrevisivel",
+        "criterio": "previsibilidadeDaCarga",
+        "rotulo": "Estável e previsível"
+      },
+      {
+        "id": "cargaVariavelOuSazonal",
+        "criterio": "previsibilidadeDaCarga",
+        "rotulo": "Variável ou sazonal"
+      }
+    ]
+  },
+  {
+    "id": "valorDeNegocio",
+    "nome": "Valor de negócio",
+    "descricao": "Quanto a aplicação vale para o negócio hoje. É uma das duas dimensões do quadrante de portfólio de [Kirkila2025], única fonte do corpus com regras explícitas ligando atributos de aplicação a tratamento indicado. A leitura do tratamento indicado no vocabulário dos 7Rs é interpretação da pesquisadora, não afirmação de [Kirkila2025]: \"substituir\" admite Retire ou Repurchase e \"evoluir\" admite Retain ou Replatform (Seção 6.1 dos requisitos). A literatura não fornece limiar para separar valor alto de baixo, então a resposta depende do julgamento do respondente (limitação 2 dos requisitos).",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "valorDeNegocioAlto",
+        "criterio": "valorDeNegocio",
+        "rotulo": "Alto"
+      },
+      {
+        "id": "valorDeNegocioBaixo",
+        "criterio": "valorDeNegocio",
+        "rotulo": "Baixo"
+      }
+    ]
+  },
+  {
+    "id": "qualidadeTecnica",
+    "nome": "Qualidade técnica e débito técnico",
+    "descricao": "Se manter e evoluir a aplicação é simples ou custa caro por deficiências internas acumuladas. É a outra dimensão do quadrante de [Kirkila2025], que indica reengenharia para tratar débito técnico quando o valor de negócio é alto e a qualidade técnica é ruim; [Fonseca2024] mede o débito no caso industrial (4 dias e 2 horas antes da refatoração, 4 horas e 40 minutos depois, com segurança e confiabilidade de E para A) e sustenta que ele é redutível por reengenharia. A pergunta fala em custo de manutenção em lugar de \"débito técnico\" (decisão de projeto da Seção 3.1 do design), mitigação parcial: sem limiar operacional na literatura, a classificação continua sendo julgamento do respondente.",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "qualidadeTecnicaBoa",
+        "criterio": "qualidadeTecnica",
+        "rotulo": "Boa: manter e evoluir é simples"
+      },
+      {
+        "id": "qualidadeTecnicaRuim",
+        "criterio": "qualidadeTecnica",
+        "rotulo": "Ruim: custa caro por deficiências internas acumuladas"
+      }
+    ]
+  },
+  {
+    "id": "tempoParaReengenharia",
+    "nome": "Tempo disponível para reengenharia",
+    "descricao": "Se há prazo e disponibilidade de equipe para uma reescrita ou reestruturação da aplicação. [Khouibiri2024] e [Bremer2021] indicam que a indisponibilidade de tempo favorece mover sem alterar e desfavorece a reengenharia. [Fonseca2024] mostra o custo concreto de subestimar esse esforço: diante do fim de suporte com data marcada, a equipe optou pela alternativa mais completa, não cumpriu o prazo interno e executou a intermediária como paliativo antes de retomar a completa, em migração que durou de janeiro de 2023 a maio de 2024.",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "haTempoParaReengenharia",
+        "criterio": "tempoParaReengenharia",
+        "rotulo": "Sim, há prazo e equipe para isso"
+      },
+      {
+        "id": "semTempoParaReengenharia",
+        "criterio": "tempoParaReengenharia",
+        "rotulo": "Não"
+      }
+    ]
+  },
+  {
+    "id": "volumeDeCodigo",
+    "nome": "Volume de código",
+    "descricao": "Tamanho da base de código a migrar. [Fonseca2024] afirma explicitamente que o risco de falha é proporcional ao volume de código envolvido, o que faz deste critério um contrapeso à reengenharia mesmo quando o débito técnico a recomenda. Nenhum estudo do corpus fornece limiar entre base grande, moderada e pequena (limitação 2 dos requisitos); [Ayas2023] usa tamanho em linhas de código, mas como critério de decomposição de monolito, passo posterior à escolha da estratégia e por isso fora da versão inicial (Seção 3.2 do design).",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "volumeDeCodigoGrande",
+        "criterio": "volumeDeCodigo",
+        "rotulo": "Grande"
+      },
+      {
+        "id": "volumeDeCodigoModerado",
+        "criterio": "volumeDeCodigo",
+        "rotulo": "Moderada"
+      },
+      {
+        "id": "volumeDeCodigoPequeno",
+        "criterio": "volumeDeCodigo",
+        "rotulo": "Pequena"
+      }
+    ]
+  },
+  {
+    "id": "acoplamentoDeDependencias",
+    "nome": "Acoplamento e restrições da aplicação",
+    "descricao": "Se há dependência forte de bibliotecas de terceiros ou de versões já descontinuadas. [Fonseca2024] documenta centenas de arquivos afetados pela atualização de uma única dependência e dependências que só funcionam em versões descontinuadas, e trata ambos como determinantes de esforço e de risco. Não se confunde com as verificações de bibliotecas de [Khouibiri2024] no Bloco F: aqui a pergunta é sobre o estado da aplicação, lá sobre as restrições de execução da plataforma alvo.",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "haAcoplamentoForte",
+        "criterio": "acoplamentoDeDependencias",
+        "rotulo": "Sim, há dependência forte ou versão descontinuada"
+      },
+      {
+        "id": "semAcoplamentoForte",
+        "criterio": "acoplamentoDeDependencias",
+        "rotulo": "Não"
+      }
+    ]
+  },
+  {
+    "id": "competenciaInternaEmNuvem",
+    "nome": "Competência técnica interna em nuvem",
+    "descricao": "Se a empresa tem competência interna em nuvem ou depende de terceiros para isso. [RoyPatil2023] sustenta competência humana entre os fatores significativos da adoção em PMEs, e [Bremer2021] registra que conhecimento técnico mais profundo tem impacto positivo na decisão; [Khouibiri2024] e [Kirkila2025] ligam a ausência de competência a desfavorecer a reengenharia e os alvos PaaS, com indicação de parceria externa. É, com a aversão a aprisionamento tecnológico (P11), um dos dois únicos fatores organizacionais que o corpus liga a estratégia específica dos 7Rs — divergência D5 e limitação 3 dos requisitos.",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "temCompetenciaInterna",
+        "criterio": "competenciaInternaEmNuvem",
+        "rotulo": "Tem competência interna"
+      },
+      {
+        "id": "dependeDeTerceiros",
+        "criterio": "competenciaInternaEmNuvem",
+        "rotulo": "Depende de terceiros"
+      }
+    ]
+  },
+  {
+    "id": "aversaoAAprisionamento",
+    "nome": "Aversão a aprisionamento tecnológico",
+    "descricao": "Se depender de tecnologias exclusivas de um provedor é preocupação relevante para a empresa. [Bremer2021] mede a dependência do provedor como o quarto fator mais importante da decisão em PMEs, com pontuação 16 entre os fatores restritivos, e [Khouibiri2024] liga a preocupação a desfavorecer os alvos PaaS e SaaS, cujos serviços gerenciados são o que produz a dependência. É, com a competência interna em nuvem (P10), um dos dois únicos fatores organizacionais que o corpus liga a estratégia específica dos 7Rs — divergência D5 e limitação 3 dos requisitos.",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "haAversaoAAprisionamento",
+        "criterio": "aversaoAAprisionamento",
+        "rotulo": "Sim, é preocupação relevante"
+      },
+      {
+        "id": "semAversaoAAprisionamento",
+        "criterio": "aversaoAAprisionamento",
+        "rotulo": "Não é preocupação relevante"
+      }
+    ]
+  },
+  {
+    "id": "equivalenteEmSaaS",
+    "nome": "Disponibilidade de equivalente em SaaS",
+    "descricao": "Se existe no mercado solução comercial pronta que faça o que a aplicação faz. [Khouibiri2024] arrola a substituição por SaaS entre as alternativas organizadas por modelo de serviço alvo, ao lado de modificação e reengenharia. Ler essa passagem como a estratégia Repurchase dos 7Rs é interpretação da pesquisadora: Repurchase não tem caracterização no corpus, e \"substitution by SaaS\" é a aproximação mais próxima (Seção 6.1 dos requisitos).",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "haEquivalenteEmSaaS",
+        "criterio": "equivalenteEmSaaS",
+        "rotulo": "Sim, existe solução comercial equivalente"
+      },
+      {
+        "id": "semEquivalenteEmSaaS",
+        "criterio": "equivalenteEmSaaS",
+        "rotulo": "Não"
+      }
+    ]
+  },
+  {
+    "id": "prioridadeDeRiscoFinanceiro",
+    "nome": "Prioridade de risco financeiro",
+    "descricao": "Se risco financeiro é prioridade alta na decisão. [Jose2021] conclui, pela comparação de 33 variáveis de risco por Processo de Rede Analítica, que a infraestrutura exclusivamente local apresenta risco financeiro alto e que, sendo alta a prioridade desse risco, a decisão de usar infraestrutura própria não deve ser tomada. A evidência vem de 51 operadoras de telecomunicações em 11 mercados, o que exige a marcação de porte nas regras que dela derivam (Requisito 4.5), e opõe-se à leitura de custo de [Dalakas2025] sob carga estável — divergência D3, deixada visível no resultado como evidência dividida.",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "riscoFinanceiroEhPrioridade",
+        "criterio": "prioridadeDeRiscoFinanceiro",
+        "rotulo": "Sim, é prioridade alta"
+      },
+      {
+        "id": "riscoFinanceiroNaoEhPrioridade",
+        "criterio": "prioridadeDeRiscoFinanceiro",
+        "rotulo": "Não"
+      }
+    ]
+  },
+  {
+    "id": "inovacaoComoPrioridade",
+    "nome": "Inovação como prioridade",
+    "descricao": "Se habilitar recursos novos que a aplicação atual não permite é objetivo desta migração. É a terceira dimensão do quadrante de portfólio de [Kirkila2025], que indica migrar para tecnologias emergentes quando a inovação é prioridade; a leitura desse tratamento como Refactor/Rearchitect é interpretação da pesquisadora e carrega a marcação correspondente. [Sagala2024] pondera na direção contrária no contexto de PMEs, ao recomendar inovação incremental em lugar de radical diante da escassez de mão de obra qualificada e de financiamento.",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "inovacaoEhPrioridade",
+        "criterio": "inovacaoComoPrioridade",
+        "rotulo": "Sim, é objetivo desta migração"
+      },
+      {
+        "id": "inovacaoNaoEhPrioridade",
+        "criterio": "inovacaoComoPrioridade",
+        "rotulo": "Não"
+      }
+    ]
+  },
+  {
+    "id": "compatibilidadeDeLinguagem",
+    "nome": "Compatibilidade de linguagem (PaaS)",
+    "descricao": "Se a linguagem e o runtime da aplicação são suportados pela plataforma gerenciada pretendida. É a primeira das cinco verificações que [Khouibiri2024] declara obrigatórias quando o alvo é PaaS, e por isso sustenta regra do tipo precondição: a incompatibilidade fixa Replatform em não recomendada, e nenhuma soma de contribuições a tira de lá (Seção 5.1 do design). Sem resposta, a precondição não elimina a estratégia (Requisito 3.3).",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "linguagemSuportada",
+        "criterio": "compatibilidadeDeLinguagem",
+        "rotulo": "Sim, é suportada"
+      },
+      {
+        "id": "linguagemNaoSuportada",
+        "criterio": "compatibilidadeDeLinguagem",
+        "rotulo": "Não é suportada"
+      }
+    ]
+  },
+  {
+    "id": "compatibilidadeDeBanco",
+    "nome": "Compatibilidade de banco de dados (PaaS)",
+    "descricao": "Se o banco de dados da aplicação tem equivalente compatível na plataforma gerenciada pretendida. Segunda verificação obrigatória de [Khouibiri2024] para alvo PaaS, também do tipo precondição. É o caso usado no cenário de teste \"alvo PaaS incompatível\" da Seção 8.1 do design.",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "bancoComEquivalente",
+        "criterio": "compatibilidadeDeBanco",
+        "rotulo": "Sim, há equivalente compatível"
+      },
+      {
+        "id": "bancoSemEquivalente",
+        "criterio": "compatibilidadeDeBanco",
+        "rotulo": "Não há equivalente compatível"
+      }
+    ]
+  },
+  {
+    "id": "adaptacaoDeMiddleware",
+    "nome": "Adaptação de middleware (PaaS)",
+    "descricao": "Se o middleware da aplicação pode ser adaptado ou substituído pelos serviços da plataforma gerenciada pretendida. Terceira verificação obrigatória de [Khouibiri2024] para alvo PaaS, do tipo precondição.",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "middlewareAdaptavel",
+        "criterio": "adaptacaoDeMiddleware",
+        "rotulo": "Sim, pode ser adaptado ou substituído"
+      },
+      {
+        "id": "middlewareNaoAdaptavel",
+        "criterio": "adaptacaoDeMiddleware",
+        "rotulo": "Não"
+      }
+    ]
+  },
+  {
+    "id": "bibliotecasSobRestricoesDaPlataforma",
+    "nome": "Bibliotecas de terceiros e restrições da plataforma (PaaS)",
+    "descricao": "Se as bibliotecas de terceiros funcionam sob as restrições de execução da plataforma gerenciada pretendida. Reúne as duas últimas verificações obrigatórias de [Khouibiri2024] para alvo PaaS — bibliotecas de terceiros e restrições da plataforma —, que se verificam em conjunto porque a restrição de execução é o que impede a biblioteca de funcionar. Não se confunde com o acoplamento de dependências do Bloco D (P9): lá a pergunta é sobre o estado da aplicação, aqui sobre a sua execução na plataforma alvo.",
+    "permiteRespostaMultipla": false,
+    "valores": [
+      {
+        "id": "bibliotecasCompativeis",
+        "criterio": "bibliotecasSobRestricoesDaPlataforma",
+        "rotulo": "Sim, funcionam sob essas restrições"
+      },
+      {
+        "id": "bibliotecasIncompativeis",
+        "criterio": "bibliotecasSobRestricoesDaPlataforma",
+        "rotulo": "Não"
+      }
+    ]
+  }
+]

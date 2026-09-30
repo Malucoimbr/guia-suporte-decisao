@@ -1,0 +1,238 @@
+[
+  {
+    "id": "fatoresDeSucesso",
+    "aviso": "semPlanoDeExecucao",
+    "titulo": "Fatores de sucesso do processo, que o Guia não avalia",
+    "descricao": "[Kirkila2025] os apresenta como determinantes do resultado da migração. Não são critérios de escolha de estratégia — nenhuma pergunta desta sessão investigou qualquer um deles — e nenhum depende da estratégia escolhida.",
+    "itens": [
+      {
+        "id": "planejamentoDetalhado",
+        "texto": "Planejamento detalhado, com avaliação de risco e alocação de recursos.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": []
+      },
+      {
+        "id": "envolvimentoDasPartesInteressadas",
+        "texto": "Envolvimento das partes interessadas ao longo do processo, e não apenas na decisão inicial.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": []
+      },
+      {
+        "id": "implementacaoEmFases",
+        "texto": "Implementação em fases, em lugar de virada única.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": []
+      },
+      {
+        "id": "migracaoEValidacaoDeDados",
+        "texto": "Migração e validação robustas dos dados.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": []
+      },
+      {
+        "id": "treinamentoESuporte",
+        "texto": "Treinamento e suporte a quem opera e a quem usa a aplicação.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": []
+      },
+      {
+        "id": "fatoresEmergidosDosEstudosDeCaso",
+        "texto": "Parceria externa, início por prova de conceito, gestão de mudança, governança de TI definida e decisões dirigidas pelo negócio: fatores que emergiram dos estudos de caso de [Kirkila2025] e que o próprio estudo registra como sub-representados na literatura.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": []
+      }
+    ]
+  },
+  {
+    "id": "fatoresDeFracasso",
+    "aviso": "semPlanoDeExecucao",
+    "titulo": "Fatores de fracasso do processo, que o Guia não avalia",
+    "descricao": "[Kirkila2025] agrupa os fatores de fracasso em técnicos, organizacionais e de estratégia e risco. Os que dependem do caminho escolhido aparecem aqui apenas quando a estratégia correspondente foi recomendada nesta sessão; a associação entre fator e estratégia é leitura da pesquisadora, não afirmação do estudo, que trata os fatores como propriedades do processo de migração.",
+    "itens": [
+      {
+        "id": "indisponibilidadeNaTransicao",
+        "texto": "Indisponibilidade da aplicação durante a transição.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": ["rehost", "replatform", "refactor", "repurchase", "relocate"]
+      },
+      {
+        "id": "integridadeDosDados",
+        "texto": "Perda de integridade dos dados ao movê-los.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": ["rehost", "replatform", "refactor", "repurchase", "relocate"]
+      },
+      {
+        "id": "incompatibilidadeDePlataforma",
+        "texto": "Incompatibilidade entre a aplicação e a plataforma alvo, descoberta depois de a migração começar.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": ["rehost", "replatform", "refactor"]
+      },
+      {
+        "id": "integracaoETesteDeficientes",
+        "texto": "Integração e teste deficientes entre a aplicação migrada e o que continua no lugar.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": ["replatform", "refactor", "repurchase"]
+      },
+      {
+        "id": "complexidadeSubestimada",
+        "texto": "Complexidade do trabalho subestimada no planejamento.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": ["replatform", "refactor"]
+      },
+      {
+        "id": "planejamentoDeficiente",
+        "texto": "Planejamento deficiente do processo.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": []
+      },
+      {
+        "id": "engajamentoFraco",
+        "texto": "Engajamento fraco das partes interessadas.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": []
+      },
+      {
+        "id": "resistenciaAMudanca",
+        "texto": "Resistência à mudança por parte de quem usa a aplicação hoje.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": ["retire", "repurchase", "refactor"]
+      },
+      {
+        "id": "metasDesalinhadas",
+        "texto": "Metas desalinhadas entre a área de TI e o negócio.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": []
+      },
+      {
+        "id": "treinamentoLimitado",
+        "texto": "Treinamento limitado das equipes que passarão a operar a aplicação.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": ["replatform", "refactor", "repurchase"]
+      },
+      {
+        "id": "restricaoDeRecursos",
+        "texto": "Restrição de recursos — pessoas, tempo e orçamento — ao longo da execução.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": []
+      },
+      {
+        "id": "avaliacaoDeRiscoDeficiente",
+        "texto": "Avaliação de risco deficiente.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": []
+      },
+      {
+        "id": "ausenciaDePlanoDeContingencia",
+        "texto": "Ausência de plano de contingência para o caso de a migração não correr como previsto.",
+        "estudosDeOrigem": ["[Kirkila2025]"],
+        "estrategias": []
+      }
+    ]
+  },
+  {
+    "id": "condutoresDeCusto",
+    "aviso": "semEstimativaDeCusto",
+    "titulo": "Condutores de custo identificados por [Dalakas2025]",
+    "descricao": "Os quatro condutores que separaram os custos de ambiente local, nuvem privada gerenciada e nuvem pública na comparação de cinco anos de [Dalakas2025], estudo conduzido em organização governamental de larga escala. A associação de cada condutor às estratégias é leitura da pesquisadora.",
+    "itens": [
+      {
+        "id": "descontosDoFornecedor",
+        "texto": "Descontos do fornecedor: os descontos de instâncias reservadas caíram de 72% para menos de 60% em 2024, o que eliminou a vantagem de custo que a nuvem privada gerenciada tinha antes.",
+        "estudosDeOrigem": ["[Dalakas2025]"],
+        "estrategias": ["rehost", "replatform", "refactor", "repurchase", "relocate"]
+      },
+      {
+        "id": "limiteDeDuracaoContratual",
+        "texto": "Limite de duração contratual: contratos de nuvem alcançam três anos, enquanto o período de depreciação da organização estudada é de sete — o desalinhamento entre os dois prazos favorece a permanência no ambiente atual.",
+        "estudosDeOrigem": ["[Dalakas2025]"],
+        "estrategias": []
+      },
+      {
+        "id": "custoDeManutencao",
+        "texto": "Custo de manutenção do ambiente, que segue existindo em qualquer dos caminhos e muda de forma em cada um.",
+        "estudosDeOrigem": ["[Dalakas2025]"],
+        "estrategias": []
+      },
+      {
+        "id": "politicaDeDepreciacao",
+        "texto": "Política de depreciação do ativo próprio: no estudo, a solução local manteve custo anual estável de cerca de 2,8 milhões de euros ao longo dos cinco anos.",
+        "estudosDeOrigem": ["[Dalakas2025]"],
+        "estrategias": ["retain", "rehost", "relocate"]
+      }
+    ]
+  },
+  {
+    "id": "custosOcultos",
+    "aviso": "semEstimativaDeCusto",
+    "titulo": "Custos ocultos que as calculadoras de provedor não trazem, segundo [Ramchand2021]",
+    "descricao": "[Ramchand2021] registra estes itens como ausentes das calculadoras de provedores no caso de 350 aplicações que avaliou. O estudo propõe como critério de viabilidade que a economia acumulada nos anos 1 a 3 cubra todo ou quase todo o custo de transformação e de transição. Os itens que dependem do caminho escolhido aparecem aqui apenas quando a estratégia correspondente foi recomendada; a associação é leitura da pesquisadora.",
+    "itens": [
+      {
+        "id": "arquiteturaDeSolucao",
+        "texto": "Arquitetura de solução: o trabalho de desenhar o ambiente alvo antes de mover qualquer coisa.",
+        "estudosDeOrigem": ["[Ramchand2021]"],
+        "estrategias": ["rehost", "replatform", "refactor", "relocate"]
+      },
+      {
+        "id": "gerenciaDeProjeto",
+        "texto": "Gerência de projeto ao longo de toda a execução.",
+        "estudosDeOrigem": ["[Ramchand2021]"],
+        "estrategias": []
+      },
+      {
+        "id": "seguranca",
+        "texto": "Segurança: controles, revisão e acompanhamento no ambiente novo.",
+        "estudosDeOrigem": ["[Ramchand2021]"],
+        "estrategias": ["rehost", "replatform", "refactor", "repurchase", "relocate"]
+      },
+      {
+        "id": "dns",
+        "texto": "DNS e a reconfiguração dos nomes pelos quais a aplicação é alcançada.",
+        "estudosDeOrigem": ["[Ramchand2021]"],
+        "estrategias": ["rehost", "replatform", "refactor", "relocate"]
+      },
+      {
+        "id": "bancoDeDadosComoServico",
+        "texto": "Banco de dados como serviço, quando o banco atual passa a ser serviço gerenciado da plataforma.",
+        "estudosDeOrigem": ["[Ramchand2021]"],
+        "estrategias": ["replatform", "refactor"]
+      },
+      {
+        "id": "conectividadeARedePrivada",
+        "texto": "Conectividade a rede privada entre o ambiente atual e o novo.",
+        "estudosDeOrigem": ["[Ramchand2021]"],
+        "estrategias": ["rehost", "replatform", "refactor", "relocate"]
+      },
+      {
+        "id": "gestaoDeCicloDeVida",
+        "texto": "Gestão de ciclo de vida dos recursos criados no ambiente novo.",
+        "estudosDeOrigem": ["[Ramchand2021]"],
+        "estrategias": ["rehost", "replatform", "refactor", "relocate"]
+      },
+      {
+        "id": "automacao",
+        "texto": "Automação de implantação e de operação, que o ambiente novo passa a exigir.",
+        "estudosDeOrigem": ["[Ramchand2021]"],
+        "estrategias": ["rehost", "replatform", "refactor", "relocate"]
+      },
+      {
+        "id": "governancaDeRecursos",
+        "texto": "Governança de recursos: quem pode criar o quê, com que limite de gasto.",
+        "estudosDeOrigem": ["[Ramchand2021]"],
+        "estrategias": ["rehost", "replatform", "refactor", "repurchase", "relocate"]
+      },
+      {
+        "id": "altaDisponibilidade",
+        "texto": "Alta disponibilidade, que no ambiente novo é configuração paga e não propriedade herdada.",
+        "estudosDeOrigem": ["[Ramchand2021]"],
+        "estrategias": ["rehost", "replatform", "refactor", "relocate"]
+      },
+      {
+        "id": "execucaoParalela",
+        "texto": "Execução paralela da plataforma legada e da nova durante a transição — mitigação que [Fonseca2024] também documenta, com redirecionamento gradual do tráfego, e que significa pagar os dois ambientes ao mesmo tempo.",
+        "estudosDeOrigem": ["[Ramchand2021]", "[Fonseca2024]"],
+        "estrategias": ["rehost", "replatform", "refactor", "relocate"]
+      }
+    ]
+  }
+]

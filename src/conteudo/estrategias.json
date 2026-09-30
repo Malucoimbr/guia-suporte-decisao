@@ -1,0 +1,44 @@
+[
+  {
+    "id": "retain",
+    "nome": "Retain",
+    "descricao": "Manter a aplicação como está, no ambiente atual, sem migrá-la. Em [Ramchand2021] aparece como \"No Change\"; em [Kirkila2025], como manter apenas em manutenção ou evoluir com novas funcionalidades no lugar em que está.",
+    "temCaracterizacaoNoCorpus": true
+  },
+  {
+    "id": "retire",
+    "nome": "Retire",
+    "descricao": "Desativar a aplicação, deixando de operá-la. [Ramchand2021] exclui da avaliação as aplicações não estratégicas ou já destinadas à desativação; [Kirkila2025] indica substituir o que tem baixo valor de negócio e baixa qualidade técnica.",
+    "temCaracterizacaoNoCorpus": true
+  },
+  {
+    "id": "rehost",
+    "nome": "Rehost",
+    "descricao": "Mover a aplicação para a nuvem sem alterá-la (lift and shift), tipicamente com alvo IaaS. Nomeada e caracterizada em [Kirkila2025], [Patel2024] e [Khouibiri2024].",
+    "temCaracterizacaoNoCorpus": true
+  },
+  {
+    "id": "replatform",
+    "nome": "Replatform",
+    "descricao": "Adaptar a aplicação à plataforma alvo, sem reescrevê-la — tipicamente alvo PaaS ou contêineres. [Khouibiri2024] declara obrigatórias, nesse caso, as verificações de linguagem, banco de dados, middleware e bibliotecas de terceiros; [Kirkila2025] a caracteriza com contêineres.",
+    "temCaracterizacaoNoCorpus": true
+  },
+  {
+    "id": "refactor",
+    "nome": "Refactor/Rearchitect",
+    "descricao": "Reescrever ou reestruturar a aplicação, alterando a sua arquitetura. [Kirkila2025] a indica para tratar débito técnico e para migrar a tecnologias emergentes; [Fonseca2024] mede o esforço e o risco em caso industrial; [Ayas2023] trata da decomposição de monolito.",
+    "temCaracterizacaoNoCorpus": true
+  },
+  {
+    "id": "repurchase",
+    "nome": "Repurchase",
+    "descricao": "Substituir a aplicação por solução comercial pronta, tipicamente SaaS. Sem caracterização no corpus (Seção 6.1 dos requisitos): a aproximação mais próxima é \"substitution by SaaS\" em [Khouibiri2024], e ler essa passagem como Repurchase é interpretação da pesquisadora.",
+    "temCaracterizacaoNoCorpus": false
+  },
+  {
+    "id": "relocate",
+    "nome": "Relocate",
+    "descricao": "Mover o ambiente inteiro entre infraestruturas, sem alterar as aplicações que ele hospeda. Sem caracterização no corpus (Seção 6.1 dos requisitos): as ocorrências de \"relocate\" em [Patel2024] são uso verbal comum, não nome de estratégia, e nenhuma regra evidenciada a favorece.",
+    "temCaracterizacaoNoCorpus": false
+  }
+]

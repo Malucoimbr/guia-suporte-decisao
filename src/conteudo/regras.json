@@ -1,0 +1,609 @@
+[
+  {
+    "id": "R01",
+    "condicao": {
+      "pares": [
+        { "criterio": "valorDeNegocio", "valor": "valorDeNegocioBaixo" },
+        { "criterio": "qualidadeTecnica", "valor": "qualidadeTecnicaRuim" }
+      ],
+      "descricao": "A aplicação vale pouco para o negócio e custa caro para manter"
+    },
+    "estrategiaAlvo": "retire",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "Uma aplicação que vale pouco para o negócio e ainda custa caro para manter é candidata a sair de operação: o gasto de mantê-la de pé não se paga com o que ela entrega.",
+    "estudosDeOrigem": ["[Kirkila2025]"],
+    "ehInterpretacao": true,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R02",
+    "condicao": {
+      "pares": [
+        { "criterio": "valorDeNegocio", "valor": "valorDeNegocioBaixo" },
+        { "criterio": "qualidadeTecnica", "valor": "qualidadeTecnicaRuim" }
+      ],
+      "descricao": "A aplicação vale pouco para o negócio e custa caro para manter"
+    },
+    "estrategiaAlvo": "repurchase",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "Se a função que a aplicação cumpre continua necessária, mas ela vale pouco e custa caro para manter, comprar uma solução pronta tende a sair mais barato do que continuar sustentando a atual.",
+    "estudosDeOrigem": ["[Kirkila2025]"],
+    "ehInterpretacao": true,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R03",
+    "condicao": {
+      "pares": [
+        { "criterio": "valorDeNegocio", "valor": "valorDeNegocioBaixo" },
+        { "criterio": "qualidadeTecnica", "valor": "qualidadeTecnicaBoa" }
+      ],
+      "descricao": "A aplicação vale pouco para o negócio, mas é simples de manter"
+    },
+    "estrategiaAlvo": "retain",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "A aplicação vale pouco para o negócio, mas se sustenta sem esforço: mantê-la como está, só em manutenção, evita gastar em uma mudança que renderia pouco retorno.",
+    "estudosDeOrigem": ["[Kirkila2025]"],
+    "ehInterpretacao": true,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R04",
+    "condicao": {
+      "pares": [
+        { "criterio": "valorDeNegocio", "valor": "valorDeNegocioAlto" },
+        { "criterio": "qualidadeTecnica", "valor": "qualidadeTecnicaBoa" }
+      ],
+      "descricao": "A aplicação é importante para o negócio e é simples de manter"
+    },
+    "estrategiaAlvo": "retain",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "A aplicação é importante para o negócio e está saudável: o caminho indicado é seguir evoluindo com novas funcionalidades, sem interromper isso para reescrevê-la ou trocá-la.",
+    "estudosDeOrigem": ["[Kirkila2025]"],
+    "ehInterpretacao": true,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R05",
+    "condicao": {
+      "pares": [
+        { "criterio": "valorDeNegocio", "valor": "valorDeNegocioAlto" },
+        { "criterio": "qualidadeTecnica", "valor": "qualidadeTecnicaBoa" }
+      ],
+      "descricao": "A aplicação é importante para o negócio e é simples de manter"
+    },
+    "estrategiaAlvo": "replatform",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "Aplicação importante e saudável comporta ganhar plataforma nova sem reescrita: adaptá-la à plataforma gerenciada abre espaço para evoluir com novas funcionalidades aproveitando o que já funciona.",
+    "estudosDeOrigem": ["[Kirkila2025]"],
+    "ehInterpretacao": true,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R06",
+    "condicao": {
+      "pares": [
+        { "criterio": "valorDeNegocio", "valor": "valorDeNegocioAlto" },
+        { "criterio": "qualidadeTecnica", "valor": "qualidadeTecnicaRuim" }
+      ],
+      "descricao": "A aplicação é importante para o negócio, mas custa caro para manter"
+    },
+    "estrategiaAlvo": "refactor",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "A aplicação é importante para o negócio e as deficiências internas acumuladas já pesam no custo de mantê-la: reestruturá-la é o que ataca a causa desse custo, em lugar de conviver com ele. Em caso industrial semelhante, a reestruturação reduziu o esforço de manutenção acumulado de mais de quatro dias de trabalho para menos de cinco horas.",
+    "estudosDeOrigem": ["[Kirkila2025]", "[Fonseca2024]"],
+    "ehInterpretacao": true,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R07",
+    "condicao": {
+      "pares": [{ "criterio": "inovacaoComoPrioridade", "valor": "inovacaoEhPrioridade" }],
+      "descricao": "Habilitar recursos novos que a aplicação atual não permite é objetivo desta migração"
+    },
+    "estrategiaAlvo": "refactor",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "O objetivo declarado é habilitar recursos que a aplicação de hoje não permite, e isso exige mexer na forma como ela é construída, não apenas mudar o lugar onde ela roda.",
+    "estudosDeOrigem": ["[Kirkila2025]"],
+    "ehInterpretacao": true,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R08",
+    "condicao": {
+      "pares": [{ "criterio": "usoDaAplicacao", "valor": "previstaParaDesativacao" }],
+      "descricao": "A aplicação já está prevista para desativação ou substituição"
+    },
+    "estrategiaAlvo": "retire",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "A aplicação já está prevista para sair de operação. Investir em movê-la ou adaptá-la seria gastar duas vezes: o caminho é desativá-la.",
+    "estudosDeOrigem": ["[Ramchand2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R09",
+    "condicao": {
+      "pares": [{ "criterio": "usoDaAplicacao", "valor": "continuaEmUso" }],
+      "descricao": "A aplicação continuará em uso"
+    },
+    "estrategiaAlvo": "retire",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "A aplicação continuará em operação, então desativá-la não está em questão nesta decisão.",
+    "estudosDeOrigem": ["[Ramchand2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R10",
+    "condicao": {
+      "pares": [{ "criterio": "restricaoRegulatoria", "valor": "haRestricaoRegulatoria" }],
+      "descricao": "Há dado ou componente sob exigência regulatória que impede a execução fora do ambiente atual"
+    },
+    "estrategiaAlvo": "retain",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "Há exigência regulatória que impede o dado ou o componente de rodar fora do ambiente atual. Enquanto ela vigora, manter a aplicação onde está é o que cumpre a norma.",
+    "estudosDeOrigem": ["[Ramchand2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R11",
+    "condicao": {
+      "pares": [{ "criterio": "restricaoRegulatoria", "valor": "haRestricaoRegulatoria" }],
+      "descricao": "Há dado ou componente sob exigência regulatória que impede a execução fora do ambiente atual"
+    },
+    "estrategiaAlvo": "rehost",
+    "tipoDeEfeito": "precondicao",
+    "direcao": "contra",
+    "textoMotivo": "Mover a aplicação para a nuvem sem alterá-la levaria consigo o dado ou o componente que a norma proíbe de sair do ambiente atual. Enquanto a exigência vigora, essa alternativa está descartada — o componente regulado precisa ser tratado como unidade de migração à parte.",
+    "estudosDeOrigem": ["[Ramchand2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R12",
+    "condicao": {
+      "pares": [{ "criterio": "restricaoRegulatoria", "valor": "haRestricaoRegulatoria" }],
+      "descricao": "Há dado ou componente sob exigência regulatória que impede a execução fora do ambiente atual"
+    },
+    "estrategiaAlvo": "replatform",
+    "tipoDeEfeito": "precondicao",
+    "direcao": "contra",
+    "textoMotivo": "Adaptar a aplicação a uma plataforma gerenciada significa executá-la fora do ambiente atual, o que a exigência regulatória não admite para este dado ou componente. A alternativa fica descartada enquanto a exigência vigora.",
+    "estudosDeOrigem": ["[Ramchand2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R13",
+    "condicao": {
+      "pares": [{ "criterio": "restricaoRegulatoria", "valor": "haRestricaoRegulatoria" }],
+      "descricao": "Há dado ou componente sob exigência regulatória que impede a execução fora do ambiente atual"
+    },
+    "estrategiaAlvo": "refactor",
+    "tipoDeEfeito": "precondicao",
+    "direcao": "contra",
+    "textoMotivo": "Reescrever a aplicação para rodar fora do ambiente atual não resolve a exigência regulatória, que recai sobre onde o dado ou o componente pode ser executado. A alternativa fica descartada enquanto a exigência vigora.",
+    "estudosDeOrigem": ["[Ramchand2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R14",
+    "condicao": {
+      "pares": [{ "criterio": "restricaoRegulatoria", "valor": "haRestricaoRegulatoria" }],
+      "descricao": "Há dado ou componente sob exigência regulatória que impede a execução fora do ambiente atual"
+    },
+    "estrategiaAlvo": "repurchase",
+    "tipoDeEfeito": "precondicao",
+    "direcao": "contra",
+    "textoMotivo": "Trocar a aplicação por uma solução comercial colocaria o dado regulado sob a operação de um fornecedor, fora do ambiente que a norma exige. A alternativa fica descartada enquanto a exigência vigora.",
+    "estudosDeOrigem": ["[Ramchand2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R15",
+    "condicao": {
+      "pares": [{ "criterio": "fimDeSuporte", "valor": "fimDeSuporteComPrazo" }],
+      "descricao": "A plataforma, a linguagem ou a versão em uso tem fim de suporte anunciado com prazo definido"
+    },
+    "estrategiaAlvo": "retain",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "Há data marcada para o fim do suporte da plataforma, da linguagem ou da versão em uso. Ficar como está tem prazo de validade, e prazo externo com data não se negocia com preferência interna.",
+    "estudosDeOrigem": ["[Fonseca2024]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R16",
+    "condicao": {
+      "pares": [{ "criterio": "fimDeSuporte", "valor": "fimDeSuporteSemPrazo" }],
+      "descricao": "A plataforma, a linguagem ou a versão em uso tem fim de suporte anunciado, sem prazo definido"
+    },
+    "estrategiaAlvo": "retain",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "O fim do suporte já foi anunciado, ainda que sem data. Manter a aplicação como está é conviver com um prazo que pode ser definido por terceiros a qualquer momento.",
+    "estudosDeOrigem": ["[Fonseca2024]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R17",
+    "condicao": {
+      "pares": [{ "criterio": "previsibilidadeDaCarga", "valor": "cargaEstavelEPrevisivel" }],
+      "descricao": "A carga da aplicação é estável e previsível ao longo do ano"
+    },
+    "estrategiaAlvo": "retain",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "Com carga estável e previsível, a elasticidade da nuvem pública não se converte em economia: na comparação de cinco anos, o ambiente próprio manteve custo anual estável, os contratos de nuvem alcançam três anos contra sete de depreciação dos equipamentos, e os descontos por reserva de capacidade caíram de 72% para menos de 60%. Permanecer no ambiente atual é a alternativa que esse perfil de carga sustenta.",
+    "estudosDeOrigem": ["[Dalakas2025]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": true
+  },
+  {
+    "id": "R18",
+    "condicao": {
+      "pares": [{ "criterio": "previsibilidadeDaCarga", "valor": "cargaEstavelEPrevisivel" }],
+      "descricao": "A carga da aplicação é estável e previsível ao longo do ano"
+    },
+    "estrategiaAlvo": "rehost",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "Mover a aplicação para a nuvem pública sem alterá-la, sob carga estável e previsível, foi a alternativa mais custosa em todos os cenários comparados: paga-se por elasticidade que essa carga não usa, com contrato mais curto que o prazo de depreciação do equipamento próprio.",
+    "estudosDeOrigem": ["[Dalakas2025]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": true
+  },
+  {
+    "id": "R19",
+    "condicao": {
+      "pares": [{ "criterio": "previsibilidadeDaCarga", "valor": "cargaEstavelEPrevisivel" }],
+      "descricao": "A carga da aplicação é estável e previsível ao longo do ano"
+    },
+    "estrategiaAlvo": "replatform",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "Adaptar a aplicação aos serviços gerenciados do provedor cobra pela capacidade de acompanhar variação de demanda. Com carga estável e previsível, esse é custo sem contrapartida — e a queda dos descontos por reserva de capacidade eliminou a vantagem que compensava a mudança.",
+    "estudosDeOrigem": ["[Dalakas2025]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": true
+  },
+  {
+    "id": "R20",
+    "condicao": {
+      "pares": [{ "criterio": "previsibilidadeDaCarga", "valor": "cargaVariavelOuSazonal" }],
+      "descricao": "A carga da aplicação é variável ou sazonal"
+    },
+    "estrategiaAlvo": "rehost",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "Com carga variável ou sazonal, pagar pelo uso tende a custar menos do que sustentar capacidade parada o ano inteiro, e a escalabilidade é um dos motivadores de maior peso na adoção de nuvem por PMEs. Mover a aplicação sem alterá-la já dá acesso a esse regime de pagamento.",
+    "estudosDeOrigem": ["[Hansen2023]", "[Bremer2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R21",
+    "condicao": {
+      "pares": [{ "criterio": "previsibilidadeDaCarga", "valor": "cargaVariavelOuSazonal" }],
+      "descricao": "A carga da aplicação é variável ou sazonal"
+    },
+    "estrategiaAlvo": "replatform",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "Carga variável ou sazonal é o cenário em que ajustar automaticamente a capacidade compensa: no dimensionamento simulado, o escalonamento automático com balanceamento estendeu a faixa em que o pagamento por uso permanece mais econômico. Adaptar a aplicação à plataforma gerenciada é o que entrega esse ajuste sem reescrevê-la.",
+    "estudosDeOrigem": ["[Hansen2023]", "[Bremer2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R22",
+    "condicao": {
+      "pares": [
+        { "criterio": "prioridadeDeRiscoFinanceiro", "valor": "riscoFinanceiroEhPrioridade" }
+      ],
+      "descricao": "Risco financeiro é prioridade alta na decisão"
+    },
+    "estrategiaAlvo": "retain",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "Sendo o risco financeiro prioridade alta, manter tudo em infraestrutura própria é a alternativa menos indicada: na comparação de riscos entre operadoras, o ambiente exclusivamente local concentrou risco financeiro alto, e o estudo é explícito em que, com essa prioridade, a decisão por infraestrutura própria não deveria ser tomada.",
+    "estudosDeOrigem": ["[Jose2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": true
+  },
+  {
+    "id": "R23",
+    "condicao": {
+      "pares": [
+        { "criterio": "tempoParaReengenharia", "valor": "semTempoParaReengenharia" }
+      ],
+      "descricao": "Não há prazo nem equipe disponível para reescrever ou reestruturar a aplicação"
+    },
+    "estrategiaAlvo": "rehost",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "Sem prazo nem equipe para uma reescrita, mover a aplicação como está é o caminho que cabe no tempo disponível e adia a reestruturação para depois, com a aplicação já em operação.",
+    "estudosDeOrigem": ["[Khouibiri2024]", "[Bremer2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R24",
+    "condicao": {
+      "pares": [
+        { "criterio": "tempoParaReengenharia", "valor": "semTempoParaReengenharia" }
+      ],
+      "descricao": "Não há prazo nem equipe disponível para reescrever ou reestruturar a aplicação"
+    },
+    "estrategiaAlvo": "refactor",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "Reescrever ou reestruturar a aplicação exige prazo e equipe que a empresa declara não ter. Iniciar a reengenharia nessas condições é o que produz projeto interrompido no meio do caminho.",
+    "estudosDeOrigem": ["[Khouibiri2024]", "[Bremer2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R25",
+    "condicao": {
+      "pares": [{ "criterio": "volumeDeCodigo", "valor": "volumeDeCodigoGrande" }],
+      "descricao": "A base de código a migrar é grande"
+    },
+    "estrategiaAlvo": "refactor",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "O risco de a migração falhar cresce junto com o volume de código envolvido, e a base a reescrever é grande. A reestruturação continua possível, mas com risco de execução proporcional ao tamanho.",
+    "estudosDeOrigem": ["[Fonseca2024]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R26",
+    "condicao": {
+      "pares": [{ "criterio": "volumeDeCodigo", "valor": "volumeDeCodigoPequeno" }],
+      "descricao": "A base de código a migrar é pequena"
+    },
+    "estrategiaAlvo": "refactor",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "Como o risco de falha acompanha o volume de código envolvido, uma base pequena é o cenário em que a reescrita se executa com menor exposição.",
+    "estudosDeOrigem": ["[Fonseca2024]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R27",
+    "condicao": {
+      "pares": [
+        { "criterio": "acoplamentoDeDependencias", "valor": "haAcoplamentoForte" }
+      ],
+      "descricao": "Há dependência forte de bibliotecas de terceiros ou de versões já descontinuadas"
+    },
+    "estrategiaAlvo": "replatform",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "Dependências fortes de bibliotecas de terceiros, ou presas a versões descontinuadas, encarecem a adaptação à plataforma gerenciada: no caso industrial documentado, a atualização de uma única dependência afetou centenas de arquivos.",
+    "estudosDeOrigem": ["[Fonseca2024]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R28",
+    "condicao": {
+      "pares": [
+        { "criterio": "acoplamentoDeDependencias", "valor": "haAcoplamentoForte" }
+      ],
+      "descricao": "Há dependência forte de bibliotecas de terceiros ou de versões já descontinuadas"
+    },
+    "estrategiaAlvo": "refactor",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "Dependência que só funciona em versão já descontinuada não se resolve mudando de lugar: no caso industrial documentado, foi preciso reestruturar a aplicação para se livrar dela.",
+    "estudosDeOrigem": ["[Fonseca2024]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R29",
+    "condicao": {
+      "pares": [
+        { "criterio": "competenciaInternaEmNuvem", "valor": "dependeDeTerceiros" }
+      ],
+      "descricao": "A empresa depende de terceiros para competência em nuvem"
+    },
+    "estrategiaAlvo": "refactor",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "Reescrever a aplicação para a nuvem é a alternativa que mais exige competência própria, e a empresa depende de terceiros para isso. Se a reengenharia for mesmo o caminho, a parceria externa precisa ser contratada como parte do projeto, não improvisada durante ele.",
+    "estudosDeOrigem": ["[Khouibiri2024]", "[RoyPatil2023]", "[Kirkila2025]"],
+    "ehInterpretacao": true,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R30",
+    "condicao": {
+      "pares": [
+        { "criterio": "competenciaInternaEmNuvem", "valor": "dependeDeTerceiros" }
+      ],
+      "descricao": "A empresa depende de terceiros para competência em nuvem"
+    },
+    "estrategiaAlvo": "replatform",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "Operar a aplicação sobre serviços gerenciados do provedor pressupõe equipe que conheça esses serviços, e a empresa depende de terceiros para isso. Sem parceria externa contratada, a adaptação à plataforma tende a ficar sem quem a sustente depois da entrega.",
+    "estudosDeOrigem": ["[Khouibiri2024]", "[RoyPatil2023]", "[Kirkila2025]"],
+    "ehInterpretacao": true,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R31",
+    "condicao": {
+      "pares": [
+        { "criterio": "competenciaInternaEmNuvem", "valor": "temCompetenciaInterna" }
+      ],
+      "descricao": "A empresa tem competência interna em nuvem"
+    },
+    "estrategiaAlvo": "refactor",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "A empresa tem competência própria em nuvem, o que é o que sustenta a alternativa mais exigente: conhecimento técnico mais profundo tem impacto positivo na decisão de migrar, e a competência da equipe é um dos fatores confirmados na adoção por PMEs.",
+    "estudosDeOrigem": ["[RoyPatil2023]", "[Bremer2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R32",
+    "condicao": {
+      "pares": [
+        { "criterio": "competenciaInternaEmNuvem", "valor": "temCompetenciaInterna" }
+      ],
+      "descricao": "A empresa tem competência interna em nuvem"
+    },
+    "estrategiaAlvo": "replatform",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "Com competência própria em nuvem, a empresa tem quem escolha, configure e sustente os serviços gerenciados da plataforma depois da entrega, que é a condição para essa adaptação valer a pena.",
+    "estudosDeOrigem": ["[RoyPatil2023]", "[Bremer2021]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R33",
+    "condicao": {
+      "pares": [
+        { "criterio": "aversaoAAprisionamento", "valor": "haAversaoAAprisionamento" }
+      ],
+      "descricao": "Depender de tecnologias exclusivas de um provedor é preocupação relevante para a empresa"
+    },
+    "estrategiaAlvo": "replatform",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "Adaptar a aplicação aos serviços gerenciados de um provedor é justamente o que cria a dependência que a empresa quer evitar: quanto mais serviços exclusivos, mais caro sair depois. A dependência do provedor é o quarto fator mais importante na decisão de PMEs.",
+    "estudosDeOrigem": ["[Bremer2021]", "[Khouibiri2024]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R34",
+    "condicao": {
+      "pares": [
+        { "criterio": "aversaoAAprisionamento", "valor": "haAversaoAAprisionamento" }
+      ],
+      "descricao": "Depender de tecnologias exclusivas de um provedor é preocupação relevante para a empresa"
+    },
+    "estrategiaAlvo": "repurchase",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "Trocar a aplicação por uma solução comercial entrega ao fornecedor o dado e o funcionamento do processo, que é a forma mais completa da dependência que a empresa declara querer evitar.",
+    "estudosDeOrigem": ["[Bremer2021]", "[Khouibiri2024]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R35",
+    "condicao": {
+      "pares": [{ "criterio": "equivalenteEmSaaS", "valor": "haEquivalenteEmSaaS" }],
+      "descricao": "Existe no mercado solução comercial pronta que faz o que a aplicação faz"
+    },
+    "estrategiaAlvo": "repurchase",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "favor",
+    "textoMotivo": "Já existe no mercado solução pronta que faz o que a aplicação faz. Substituí-la por essa solução dispensa migrar e manter código próprio para um problema que outros já resolvem.",
+    "estudosDeOrigem": ["[Khouibiri2024]"],
+    "ehInterpretacao": true,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R36",
+    "condicao": {
+      "pares": [{ "criterio": "equivalenteEmSaaS", "valor": "semEquivalenteEmSaaS" }],
+      "descricao": "Não existe no mercado solução comercial pronta que faça o que a aplicação faz"
+    },
+    "estrategiaAlvo": "repurchase",
+    "tipoDeEfeito": "contribuicao",
+    "direcao": "contra",
+    "textoMotivo": "Não há no mercado solução pronta equivalente, então não há o que comprar em lugar da aplicação atual: a substituição por solução comercial depende dessa equivalência existir.",
+    "estudosDeOrigem": ["[Khouibiri2024]"],
+    "ehInterpretacao": true,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R37",
+    "condicao": {
+      "pares": [
+        { "criterio": "compatibilidadeDeLinguagem", "valor": "linguagemNaoSuportada" }
+      ],
+      "descricao": "A linguagem ou o runtime da aplicação não é suportado pela plataforma gerenciada pretendida"
+    },
+    "estrategiaAlvo": "replatform",
+    "tipoDeEfeito": "precondicao",
+    "direcao": "contra",
+    "textoMotivo": "A plataforma gerenciada pretendida não suporta a linguagem ou o runtime da aplicação. É verificação obrigatória para esse alvo: sem ela, não há como adaptar a aplicação sem reescrevê-la.",
+    "estudosDeOrigem": ["[Khouibiri2024]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R38",
+    "condicao": {
+      "pares": [{ "criterio": "compatibilidadeDeBanco", "valor": "bancoSemEquivalente" }],
+      "descricao": "O banco de dados da aplicação não tem equivalente compatível na plataforma gerenciada pretendida"
+    },
+    "estrategiaAlvo": "replatform",
+    "tipoDeEfeito": "precondicao",
+    "direcao": "contra",
+    "textoMotivo": "O banco de dados da aplicação não tem equivalente compatível na plataforma gerenciada pretendida. É verificação obrigatória para esse alvo: sem banco compatível, a adaptação não se completa.",
+    "estudosDeOrigem": ["[Khouibiri2024]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R39",
+    "condicao": {
+      "pares": [{ "criterio": "adaptacaoDeMiddleware", "valor": "middlewareNaoAdaptavel" }],
+      "descricao": "O middleware da aplicação não pode ser adaptado nem substituído pelos serviços da plataforma pretendida"
+    },
+    "estrategiaAlvo": "replatform",
+    "tipoDeEfeito": "precondicao",
+    "direcao": "contra",
+    "textoMotivo": "O middleware da aplicação não pode ser adaptado nem substituído pelos serviços da plataforma pretendida. É verificação obrigatória para esse alvo: o que integra a aplicação precisa existir na plataforma nova.",
+    "estudosDeOrigem": ["[Khouibiri2024]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  },
+  {
+    "id": "R40",
+    "condicao": {
+      "pares": [
+        {
+          "criterio": "bibliotecasSobRestricoesDaPlataforma",
+          "valor": "bibliotecasIncompativeis"
+        }
+      ],
+      "descricao": "As bibliotecas de terceiros não funcionam sob as restrições de execução da plataforma pretendida"
+    },
+    "estrategiaAlvo": "replatform",
+    "tipoDeEfeito": "precondicao",
+    "direcao": "contra",
+    "textoMotivo": "As bibliotecas de terceiros que a aplicação usa não funcionam sob as restrições de execução da plataforma pretendida. É verificação obrigatória para esse alvo: a aplicação não roda sem elas.",
+    "estudosDeOrigem": ["[Khouibiri2024]"],
+    "ehInterpretacao": false,
+    "evidenciaApenasDePorteGrande": false
+  }
+]
